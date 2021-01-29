@@ -1,0 +1,37 @@
+program test;
+const
+    a := 10;
+var
+    b, c;
+procedure p();
+var e;
+    procedure q();
+   var f;
+    begin
+    e:=7;
+    f:=13;
+    c := e + f
+    end;
+begin
+    b:=10;
+    c := b + a;
+    call q()
+end;
+procedure m();
+var d;
+begin
+read(d);
+if d>5
+then c:=c+a
+end;
+begin
+    read (b);
+    while b<>0 do
+    begin
+      call p();
+      call m();
+      write(2*c);
+      read(b)
+    end
+end
+
